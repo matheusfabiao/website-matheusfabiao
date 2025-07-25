@@ -1,0 +1,9 @@
+:root {
+    --primary-color: #39ff14;
+    --secondary-color: #00cc66;
+    --dark-color: #0d0d0d;
+    --lighter-dark: #1a1a1a;
+    --light-color: #f8f9fa;
+    --gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    --font-family: 'Poppins', sans-serif;
+}

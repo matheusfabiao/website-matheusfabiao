@@ -1,0 +1,46 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matheus Fabião | {% block title %}{% endblock title %}</title>
+    {% comment %} Font Awesome {% endcomment %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    {% comment %} Google Fonts {% endcomment %}
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    {% comment %} Lennis Smooth Scroll CSS {% endcomment %}
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.8/dist/lenis.css">
+    {% comment %} CSS {% endcomment %}
+    <link rel="stylesheet" href="{% static 'css/extends.css' %}">
+    {% comment %} Favicon {% endcomment %}
+    <link rel="icon" href="{% static 'img/Logo Branca.webp' %}">
+</head>
+<body class="bg-dark">
+    {% comment %} Width limit to 1920px (full hd monitors) {% endcomment %}
+    <div class="wrapper" style="background-color: #333; max-width: 1920px; margin: 0 auto;">
+        {% comment %} Navbar {% endcomment %}
+        {% include 'components/navbar.html' %}
+      
+        {% comment %} Main Content {% endcomment %}
+        <main>
+            {% block content %}{% endblock content %}
+        </main>
+        
+        {% comment %} Bootstrap JS {% endcomment %}
+    </div>
+    
+    {% comment %} Bootstrap JS {% endcomment %}
+    <script src="{% static 'js/bootstrap/bootstrap.bundle.min.js' %}"></script>
+    
+    {% comment %} Typed JS {% endcomment %}
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    
+    {% comment %} Lenis Smooth Scroll JS {% endcomment %}
+    <script src="https://unpkg.com/lenis@1.3.8/dist/lenis.min.js"></script> 
+
+    {% comment %} Custom JS {% endcomment %}
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% comment %} CSS: 'static/css/institutional/home.css' {% endcomment %}
+
+{% block title %}Início{% endblock title %}
+
+{% block content %}
+    <section class="hero-section pt-5">
+        <div class="shape-1"></div>
+        <div class="shape-2"></div>
+
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <h2 class="hero-title-before">Olá, eu sou</h2>
+                    <h1 class="hero-title">
+                        <span>Matheus Fabião</span>
+                    </h1>
+                    <h3 class="hero-dynamic-title">
+                        <small class="small">
+                            Engenheiro de <span id="element"></span>
+                        </small>
+                    </h3>
+                    <p class="hero-subtitle">
+                        Desbloqueie o potencial da sua próxima grande ideia! Juntos, vamos transformá-la em realidade.
+                    </p>
+
+                    <div class="hero-buttons d-flex flex-wrap gap-3">
+                        <a href="#projetos" class="btn btn-primary-custom text-white">Meus Projetos</a>
+                        <a href="#contato" class="btn btn-outline-custom">Contato</a>
+                    </div>
+
+                    <div class="tech-icons">
+                        <i class="fab fa-html5 tech-icon" title="HTML5"></i>
+                        <i class="fab fa-css3-alt tech-icon" title="CSS3"></i>
+                        <i class="fab fa-js tech-icon" title="JavaScript"></i>
+                        <i class="fab fa-react tech-icon" title="React"></i>
+                        <i class="fab fa-node-js tech-icon" title="Node.js"></i>
+                        <i class="fab fa-python tech-icon" title="Python"></i>
+                        <i class="fas fa-database tech-icon" title="Banco de Dados"></i>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="hero-image drop-shadow">
+                        <img src="{% static 'img/matheusfabiao.png' %}" alt="Desenvolvedor Full Stack" class="img-fluid bottom-transparent-gradient">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section bg-lighter-dark">
+
+        <div class="container py-5 text-white">
+
+            <h2 class="fs-2 text-center fw-bold mb-5">Serviços</h2>
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <!-- Card 1 -->
+                <div class="col drop-shadow">
+                    <div class="card text-white text-center border-0 p-3">
+                        <div class="card-header border-0">
+                            <i class="fas fa-globe card-icon mb-3"></i>
+                            <h5 class="card-title">Websites Modernos</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Criação de sites rápidos, bonitos e que funcionam em todos os dispositivos.
+                            </p>
+                            <a href="#" class="btn btn-primary-custom mt-1">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col drop-shadow">
+                    <div class="card text-white text-center border-0 p-3">
+                        <div class="card-header border-0">
+                            <i class="fas fa-cogs card-icon mb-3"></i>
+                            <h5 class="card-title">Sistemas Sob Medida</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Crio soluções digitais específicas para o seu negócio.
+                            </p>
+                            <a href="#" class="btn btn-primary-custom mt-1">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col drop-shadow">
+                    <div class="card text-white text-center border-0 p-3">
+                        <div class="card-header border-0">
+                            <i class="fas fa-chart-line card-icon mb-3"></i>
+                            <h5 class="card-title">Soluções com Dados</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Transformo dados em decisões inteligentes para o seu negócio.
+                            </p>
+                            <a href="#" class="btn btn-primary-custom mt-1">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col drop-shadow">
+                    <div class="card text-white text-center border-0 p-3">
+                        <div class="card-header border-0">
+                            <i class="fas fa-robot card-icon mb-3"></i>
+                            <h5 class="card-title">Automatizações</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Economize tempo com processos que funcionam sozinhos.
+                            </p>
+                            <a href="#" class="btn btn-primary-custom mt-1">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col drop-shadow">
+                    <div class="card text-white text-center border-0 p-3">
+                        <div class="card-header border-0">
+                            <i class="fas fa-brain card-icon mb-3"></i>
+                            <h5 class="card-title">Inteligência Artificial</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Uso IA para resolver problemas e melhorar seus resultados.
+                            </p>
+                            <a href="#" class="btn btn-primary-custom mt-1">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col drop-shadow">
+                    <div class="card text-white text-center border-0 p-3">
+                        <div class="card-header border-0">
+                            <i class="fas fa-comments card-icon mb-3"></i>
+                            <h5 class="card-title">Consultoria Tech</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Aconselhamento técnico para tirar suas ideias do papel com segurança.
+                            </p>
+                            <a href="#" class="btn btn-primary-custom mt-1">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+{% endblock content %}
