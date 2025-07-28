@@ -136,6 +136,39 @@
 }
 
 
+/* Partners Section */
+.partners-section .logos {
+    overflow: hidden;
+    padding: 20px 0;
+    white-space: nowrap;
+    position: relative;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+
+    /* Mascara para desaparecer logos nas laterais */
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+
+.partners-section .logos-slide {
+    display: inline-block;
+    animation: 35s marquee infinite linear;
+}
+
+.partners-section .logos-slide img {
+    height: 50px;
+    margin: 0 40px;
+    transition: all 0.3s ease;
+}
+
+.partners-section .logos-slide img:hover {
+    transform: scale(1.1);
+}
+
+
 /* Services Section */
 .services-section .col {
     z-index: 2;

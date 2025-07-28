@@ -39,3 +39,7 @@ const lenis = new Lenis({
 lenis.on('scroll', (e) => {
   console.log(e);
 });
+
+// Marquee Home
+var copy = document.querySelector(".logos-slide").cloneNode(true);
+document.querySelector(".logos").appendChild(copy);

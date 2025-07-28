@@ -1,7 +1,7 @@
 [project]
 name = "portfolio-profissional"
 version = "0.1.0"
-description = "Add your description here"
+description = "Site Oficial do Desenvolvedor Matheus Fabião"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
