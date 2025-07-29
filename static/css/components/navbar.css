@@ -1,7 +1,7 @@
 /* Navbar Padrão */
 .navbar {
     transition: all 0.3s ease;
-    z-index: 1000;
+    z-index: 999;
 }
 
 /* Navbar ao rolar a página */

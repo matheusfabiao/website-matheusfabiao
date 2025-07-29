@@ -40,6 +40,11 @@ lenis.on('scroll', (e) => {
   console.log(e);
 });
 
-// Marquee Home
+// Marquee
 var copy = document.querySelector(".logos-slide").cloneNode(true);
 document.querySelector(".logos").appendChild(copy);
+
+// Preloader
+window.addEventListener('load',function(){
+  document.querySelector('body').classList.add("loaded")  
+});

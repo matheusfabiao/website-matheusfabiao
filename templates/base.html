@@ -18,6 +18,10 @@
     <link rel="icon" href="{% static 'img/Logo Branca.webp' %}">
 </head>
 <body class="bg-dark">
+
+    {% comment %} Preloader {% endcomment %}
+    {% include 'components/preloader.html' %}
+
     {% comment %} Width limit to 1920px (full hd monitors) {% endcomment %}
     <div class="wrapper" style="background-color: #333; max-width: 1920px; margin: 0 auto;">
         {% comment %} Navbar {% endcomment %}
