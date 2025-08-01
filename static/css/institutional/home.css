@@ -354,21 +354,81 @@
     color: #FFF;
 }
 
-/* .projects-section .tech-icons a {
-    position: relative;
-    display: inline-flex;
-    padding: 0.8125rem;
-    font-size: clamp(1.25rem, 5vw, 1.875rem);
+
+/* Contact Section */
+.contact-section,
+.contact-icon,
+.contact-info,
+.contact-form {
+    z-index: 2;
+}
+
+.contact-icon {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.contact-icon i {
     color: #FFF;
-    background-color: var(--bs-dark);
-    border-radius: 50%;
+    font-size: 1.75rem;
+    padding: 1.25rem;
+    background-color: rgba(50, 50, 50, 0.5);
+    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
 }
 
-.projects-section .tech-icons a:first-child {
-    margin-right: 0.9375rem;
+.contact-icon:hover i {
+    background-color: var(--primary-color);
 }
 
-.projects-section .tech-icons a:first-child i {
-    transform: rotate(-45deg);
+.contact-icon .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
- */
+
+.contact-icon .contact-info p {
+    margin: 0 !important;
+}
+
+/* Contact Form */
+
+.contact-form ::placeholder {
+    font-size: 0.875rem;
+    color: #FFF !important;
+    opacity: 0.5;
+}
+
+.contact-form input,
+.contact-form textarea {
+    font-size: 0.875rem;
+    background-color: var(--lighter-dark) !important;
+    color: var(--light-color) !important;
+    transition: all 0.3s ease;
+    border-color: transparent !important;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--primary-color) !important;
+}
+
+/* Autofill fix */
+.contact-form input:-webkit-autofill,
+.contact-form textarea:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px var(--lighter-dark) inset !important;
+    -webkit-text-fill-color: var(--light-color) !important;
+    transition: background-color 0s ease-in-out 0s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--primary-color) !important;
+}

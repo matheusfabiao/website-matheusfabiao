@@ -13,6 +13,8 @@
 
         <div class="container">
             <div class="row align-items-center">
+
+                <!-- Hero Content -->
                 <div class="col-lg-6 hero-content" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">
                     <h2 class="hero-title-before">Olá, eu sou</h2>
                     <h1 class="hero-title">
@@ -43,6 +45,7 @@
                     </div>
                 </div>
                 
+                <!-- Hero Image -->
                 <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000">
                     <div class="hero-image drop-shadow">
                         <img src="{% static 'img/matheusfabiao.png' %}" alt="Desenvolvedor Full Stack" class="img-fluid bottom-transparent-gradient">
@@ -391,4 +394,111 @@
             </div>
         </div>
     </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section bg-lighter-dark">
+        <div class="container py-5 text-white">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+
+                <!-- Left Side -->
+                <div class="col d-flex flex-column gap-3">
+                    <h2 class="fs-1 fw-bold mb-4 text-capitalize text-center text-md-start">
+                        Vamos trabalhar <span class="text-gradient-custom">juntos</span>
+                    </h2>
+                    <p class="text-center text-md-start">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi placeat unde voluptatibus veritatis quo nostrum sed laboriosam ex fuga laborum.</p>
+                    
+                    <!-- Contact Icons -->
+                    <!-- Phone -->
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                        <div class="contact-info text-start">
+                            <h4 class="text-gradient-custom fs-6">Telefone</h4>
+                            <p>(11) 9 9999-9999</p>
+                        </div>
+                    </div>
+
+                    <!-- LinkedIn -->
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin"></i>
+                        <div class="contact-info">
+                            <h4 class="text-gradient-custom fs-6">Linkedin</h4>
+                            <p>matheusfabiao</p>
+                        </div>
+                    </div>
+
+                    <!-- GitHub -->
+                    <div class="contact-icon">
+                        <i class="fab fa-github"></i>
+                        <div class="contact-info">
+                            <h4 class="text-gradient-custom fs-6">GitHub</h4>
+                            <p>matheusfabiao</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Email -->
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-info">
+                            <h4 class="text-gradient-custom fs-6">Email</h4>
+                            <p>matheusfabiao.dev@gmail.com</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Side -->
+                <div class="col">
+
+                    <div class="bg-dark p-4 rounded d-flex flex-column justify-content-center">
+
+                        <h2 class="fs-2 fw-bold mb-4 text-center">
+                            Entre em <span class="text-gradient-custom">Contato!</span>
+                        </h2>
+    
+                        <!-- Contact Form -->
+                        <form class="contact-form">
+                            <div class="row g-2 g-lg-3">
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-control form-control-lg" id="full-name" placeholder="Nome Completo" required>
+                                </div>
+    
+                                <!-- Email -->
+                                <div class="col-md-6 mb-3">
+                                    <input type="email" class="form-control form-control-lg" id="email" placeholder="E-mail" required>
+                                </div>
+    
+                                <!-- Phone -->
+                                <div class="col-md-6 mb-3">
+                                    <input type="tel" class="form-control form-control-lg" id="phone" placeholder="Telefone" required>
+                                </div>
+    
+                                <!-- Subject -->
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-control form-control-lg" id="subject" placeholder="Assunto da mensagem">
+                                </div>
+    
+                                <!-- Message -->
+                                <div class="col-12">
+                                    <textarea class="form-control" rows="8" id="message" rows="3" placeholder="Mensagem" required></textarea>
+                                </div>
+    
+                            </div>
+    
+                            <!-- Submit Button -->
+                            <div class="d-flex justify-content-center mt-4">
+                                <button type="submit" class="btn btn-primary-custom">Enviar</button>
+                            </div>
+    
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
 {% endblock content %}
