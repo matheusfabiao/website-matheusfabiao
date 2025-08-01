@@ -51,3 +51,50 @@ window.addEventListener('load',function(){
 
 // AOS
 AOS.init();
+
+// Projects Section Carousel
+const arrowRight = document.querySelector('.projects-section .projects-carousel .slide-navigation .arrow-right');
+const arrowLeft = document.querySelector('.projects-section .projects-carousel .slide-navigation .arrow-left');
+
+let index = 0;
+
+const activeProject = ()=> {
+  const imgSlide = document.querySelector('.projects-section .projects-carousel .img-slide');
+  const projectDetails = document.querySelectorAll('.projects-section .project-detail');
+
+  imgSlide.style.transform = `translateX(calc(${index * -100}% - ${index * 1.25}rem))`;
+
+  projectDetails.forEach(detail => {
+    detail.classList.remove('project-active');
+  });
+
+  projectDetails[index].classList.add('project-active');
+}
+
+arrowRight.addEventListener('click', () => {
+  if (index < 4) {
+    index++;
+    arrowLeft.classList.remove('disabled');
+  }
+  else {
+    index = 5;
+    arrowRight.classList.add('disabled');
+  }
+  
+  activeProject();
+  
+});
+
+arrowLeft.addEventListener('click', () => {
+  if (index > 1) {
+    index--;
+    arrowRight.classList.remove('disabled');
+  }
+  else {
+    index = 0;
+    arrowLeft.classList.add('disabled');
+  }
+
+  activeProject();
+
+});
